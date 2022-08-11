@@ -13,6 +13,7 @@ public class Vehicles : MonoBehaviour
 
     [SerializeField] float energy = 20f;  // each vehicle will have different energy capacity
     private float m_energyConsuption = 0.1f;
+    // ENCAPSULATION
     [SerializeField] public float energyConsuption {
                                                 get {return m_energyConsuption;}
                                                 set {
@@ -38,6 +39,7 @@ public class Vehicles : MonoBehaviour
     }
 
 
+    // ABSTRACTION
     public void Move()
     {
         // This function performs the movements in rotation & displacement of the Vehicles
